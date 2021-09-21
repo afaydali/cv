@@ -1,0 +1,48 @@
+html{
+    padding: 0;
+    margin: 0;
+    --colorgrey:rgb(83, 83, 85);
+    --colorblanc:white;
+    --color-linkedin:rgb(114, 114, 245);
+    --color-print:red;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+#logo-linkedin,#logo-print,#desc-linkedin,#desc-print{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background-color: var(--colorgrey);
+}
+#footer-content svg,#footer-content p{
+    color: var(--colorblanc);
+}
+#logo-linkedin svg{
+    color:var(--color-linkedin);
+}
+#logo-print svg{
+    color:var(--color-print);
+}
+/* types de polices h1 h2 p*/
+
+@media(max-width:768px){
+    #logo-linkedin,#logo-print,#desc-linkedin,#desc-print{
+        display: flex;
+        justify-content: center;
+    }
+    #desc-linkedin{
+        display: flex;
+        order: 2;
+    }
+    #logo-print{
+        display: flex;
+        order: 3;
+    }
+    #desc-print{
+        display: flex;
+        order: 4;
+    }
+}
