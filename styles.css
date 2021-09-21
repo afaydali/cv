@@ -3,6 +3,7 @@ html{
     margin: 0;
     --colorgrey:rgb(83, 83, 85);
     --colorblanc:white;
+    --color-maison:rgb(250, 4, 229);
     --color-linkedin:rgb(114, 114, 245);
     --color-print:red;
 }
@@ -10,18 +11,26 @@ html{
     margin: 0;
     padding: 0;
 }
+.container-fluid svg{
+    color: var(--color-maison);
+}
 #logo-linkedin,#logo-print,#desc-linkedin,#desc-print{
     display: flex;
     justify-content: center;
 }
 footer{
     background-color: var(--colorgrey);
+    padding-top: 10px;
 }
 #footer-content svg,#footer-content p{
     color: var(--colorblanc);
 }
 #logo-linkedin svg{
     color:var(--color-linkedin);
+}
+#logo-print{
+    display: flex;
+    align-items: flex-end;
 }
 #logo-print svg{
     color:var(--color-print);
