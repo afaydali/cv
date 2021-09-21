@@ -6,6 +6,7 @@ html{
     --color-maison:rgb(250, 4, 229);
     --color-linkedin:rgb(114, 114, 245);
     --color-print:red;
+    --color-maison-hover:turquoise;
 }
 .row{
     margin: 0;
@@ -13,6 +14,9 @@ html{
 }
 .container-fluid svg{
     color: var(--color-maison);
+}
+.container-fluid svg:hover{
+    color: var(--color-maison-hover);
 }
 #logo-linkedin,#logo-print,#desc-linkedin,#desc-print{
     display: flex;
