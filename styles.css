@@ -1,12 +1,17 @@
 html{
     padding: 0;
     margin: 0;
-    --colorgrey:rgb(83, 83, 85);
-    --colorblanc:white;
+    --colorfooter:rgb(132, 6, 126);
+    --color-script-footer:white;
     --color-maison:rgb(250, 4, 229);
     --color-linkedin:rgb(114, 114, 245);
     --color-print:red;
     --color-maison-hover:turquoise;
+    --color-svg-langages:rgb(255, 0, 21);
+    --color-svg-etoiles:rgb(7, 172, 54);
+    --color-svg-tools:rgb(140, 138, 138);
+    --navbar-background-color: rgba(0, 0, 0, 0.3);
+    --bouton-backtotop-color:beige;
 }
 .row{
     margin: 0;
@@ -18,16 +23,106 @@ html{
 .container-fluid svg:hover{
     color: var(--color-maison-hover);
 }
-#logo-linkedin,#logo-print,#desc-linkedin,#desc-print{
+#profil h1, #profil p, .titre-profil h2, #adad p, #titre-formation h2{
+    text-align: center;
+}
+#profil,#boutons-liens, .titre-profil, #profil p, #profil h1,#photo-profil,#desc-profil, #competences h2,.svg-langages{
+    margin-top: 40px;
+}
+#photo-profil img{
+    height: 400px;
+    width: auto;
+}
+#telecharger-cv{
     display: flex;
     justify-content: center;
 }
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: var(--navbar-background-color);
+}
+.imgfond{
+    /* height: 100vh;
+    width: 99vw; */
+    height: 90vh;
+}
+.imgfond .img{
+    background-image: url(./images/planner-4233907_1920.jpg);
+    /* height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; */
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#logo-linkedin,#logo-print,#desc-linkedin,#desc-print, #photo-profil, #desc-profil, #competences h2, #competences p,.svg-langages, .titre-langages, .svg-tools, .titre-tools, .svg-web-design, .titre-web-design, .svg-office, .titre-office, .svg-travail, .titre-travail, .svg-langues, .titre-langues{
+    display: flex;
+    justify-content: center;
+}
+#desc-profil p{
+    width: 500px;
+}
+.svg-langages svg{
+    color: var(--color-svg-langages);
+}
+.qualites p{
+    text-align: center;
+}
+#part-html, #part-css, #part-js, #part-wordpress, #part-bootstrap, #part-whimsical, #part-photoshop, #part-illustrator, #part-word, #part-excel, #part-power, #part-windows, #part-visual, #part-francais, #part-anglais, #part-turc, #formation-1, #formation-2, #formation-3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#notes-langages svg, #notes-tools svg, #notes-Web-Design svg, #notes-office svg, #notes-travail svg, #notes-langues svg{
+    color: var(--color-svg-etoiles);
+    height: 40px;
+    width: 30px;
+}
+.svg-tools svg{
+    color: var(--color-svg-tools);
+}
+#formation-1 img,#formation-2 img, #formation-3 img{
+    height: 100px;
+    width: 100px;
+}
+#formations p, #xp h2, #xp p{
+    text-align: center;
+}
+#portfolio{
+    text-align: center;
+}
+#portfolio img{
+    height: auto;
+    width: 100%;
+}
+#tel, #mail, #maps{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#contacts img{
+    height: 100px;
+    width: 100px;
+}
+#maps img{
+    margin-top: 50px;
+}
 footer{
-    background-color: var(--colorgrey);
+    /* background-color: var(--colorfooter); */
+    background-image: url(./images/triangles-1430105.png);
+    background-attachment: fixed;
     padding-top: 10px;
 }
 #footer-content svg,#footer-content p{
-    color: var(--colorblanc);
+    color: var(--color-script-footer);
 }
 #logo-linkedin svg{
     color:var(--color-linkedin);
@@ -39,9 +134,28 @@ footer{
 #logo-print svg{
     color:var(--color-print);
 }
+#copyright{
+    height: 100px;
+}
+#copyright h3{
+    margin-bottom: 0;
+    text-align: center;
+}
+#retour-haut svg{
+    color: rgb(17, 204, 188);
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
 /* types de polices h1 h2 p*/
 
 @media(max-width:768px){
+    #telecharger-cv, #github{
+        display: flex;
+        justify-content: center;
+    }
     #logo-linkedin,#logo-print,#desc-linkedin,#desc-print{
         display: flex;
         justify-content: center;
@@ -57,5 +171,27 @@ footer{
     #desc-print{
         display: flex;
         order: 4;
+    }
+    #maps img{
+        margin-top: 0;
+    }
+    .imgfond{
+        /* height: 100vh;
+        width: 99vw; */
+        height: 50vh;
+    }
+    .imgfond .img{
+        background-image: url(./images/planner-4233907_1920.jpg);
+        /* height: 100%;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat; */
+        height: 100%;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }

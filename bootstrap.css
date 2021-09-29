@@ -2965,9 +2965,9 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  color: black;
+  background-color: plum;
+  border-color: violet;
 }
 .btn-primary:hover {
   color: #fff;
@@ -3057,7 +3057,7 @@ textarea.form-control-lg {
 .btn-info {
   color: #000;
   background-color: #0dcaf0;
-  border-color: #0dcaf0;
+  border-color: rgb(5, 146, 149);
 }
 .btn-info:hover {
   color: #000;
@@ -4184,7 +4184,7 @@ textarea.form-control-lg {
   }
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
-    flex-basis: auto;
+    justify-content: center;
   }
   .navbar-expand-lg .navbar-toggler {
     display: none;
@@ -4382,7 +4382,7 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: var(--bs-purple);
+  color: var(--bs-white);
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: var(--bs-plum);
@@ -4399,7 +4399,8 @@ textarea.form-control-lg {
   border-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
+  background-image: url(./images/menu_white_24dp.svg);
 }
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.55);
@@ -7771,10 +7772,9 @@ textarea.form-control-lg {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
 }
-
+/* pour rendre la navbar transparente */
 .bg-light {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  --bs-bg-opacity: 0.5;
 }
 
 .bg-dark {
