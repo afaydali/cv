@@ -12,9 +12,11 @@ html{
     --color-svg-tools:rgb(140, 138, 138);
     --navbar-background-color: rgba(0, 0, 0, 0.3);
     --bouton-backtotop-color:beige;
+    --backgrounds-color:white;
 }
 body{
-    background-image: url(./images/triangles-1430105.png);
+    background-image: url(./images/snowfall-201496_1920.jpg);
+    background-attachment: fixed;
 }
 .row{
     margin: 0;
@@ -26,10 +28,29 @@ body{
 .container-fluid svg:hover{
     color: var(--color-maison-hover);
 }
+#intro{
+    transform: translateY(-500px);
+    background-color: rgb(224, 170, 224,0.5);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#profil{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: var(--backgrounds-color);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.background-div{
+    background-color: var(--backgrounds-color);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
 #profil h1, #profil p, .titre-profil h2, #adad p, #titre-formation h2{
     text-align: center;
 }
-#profil,#boutons-liens, .titre-profil, #profil p, #profil h1,#photo-profil,#desc-profil, #competences h2,.svg-langages{
+#boutons-liens, .titre-profil, #profil p, #profil h1,#photo-profil,#desc-profil, #competences h2,.svg-langages{
     margin-top: 40px;
 }
 #photo-profil img{
@@ -82,13 +103,13 @@ body{
 .qualites p{
     text-align: center;
 }
-#html,#part-html, #part-css, #part-js, #part-wordpress, #part-bootstrap, #part-whimsical, #part-photoshop, #part-illustrator, #part-word, #part-excel, #part-power, #part-windows, #part-visual, #part-francais, #part-anglais, #part-turc, #formation-1, #formation-3{
+#html,#part-html, #part-css, #part-js, #part-wordpress, #part-bootstrap, #part-whimsical, #part-photoshop, #part-illustrator, #part-word, #part-excel, #part-power, #part-windows, #part-visual, #part-francais, #part-anglais, #part-turc, #formation-1{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-#formation-2{
+#formation-2, #formation-3{
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -116,6 +137,23 @@ body{
     height: auto;
     width: 100%;
 }
+
+.grille{
+    display: grid;
+    max-width: 1100px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    grid-template-columns: repeat(auto-fill, 500px);
+    justify-content: center;
+    grid-gap: 50px;
+}
+.grid-item{
+    width: 500px;
+    height: 500px;
+    background-color: plum;
+}
+
 #tel, #mail, #maps{
     display: flex;
     justify-content: center;
