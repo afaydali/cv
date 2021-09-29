@@ -13,6 +13,9 @@ html{
     --navbar-background-color: rgba(0, 0, 0, 0.3);
     --bouton-backtotop-color:beige;
 }
+body{
+    background-image: url(./images/triangles-1430105.png);
+}
 .row{
     margin: 0;
     padding: 0;
@@ -65,19 +68,29 @@ html{
     display: flex;
     justify-content: center;
 }
+#svg-web-design img, #svg-travail img, #svg-langues img,#img-forma img,#img img,#svg-office img{
+    width: 100%;
+    height: auto;
+}
 #desc-profil p{
     width: 500px;
 }
-.svg-langages svg{
-    color: var(--color-svg-langages);
+#img-langages img{
+    height: auto;
+    width: 100%;
 }
 .qualites p{
     text-align: center;
 }
-#part-html, #part-css, #part-js, #part-wordpress, #part-bootstrap, #part-whimsical, #part-photoshop, #part-illustrator, #part-word, #part-excel, #part-power, #part-windows, #part-visual, #part-francais, #part-anglais, #part-turc, #formation-1, #formation-2, #formation-3{
+#html,#part-html, #part-css, #part-js, #part-wordpress, #part-bootstrap, #part-whimsical, #part-photoshop, #part-illustrator, #part-word, #part-excel, #part-power, #part-windows, #part-visual, #part-francais, #part-anglais, #part-turc, #formation-1, #formation-3{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+}
+#formation-2{
+    flex-direction: column;
+    display: flex;
     align-items: center;
 }
 #notes-langages svg, #notes-tools svg, #notes-Web-Design svg, #notes-office svg, #notes-travail svg, #notes-langues svg{
@@ -85,8 +98,9 @@ html{
     height: 40px;
     width: 30px;
 }
-.svg-tools svg{
-    color: var(--color-svg-tools);
+#svg-tools img{
+    width: 100%;
+    height: auto;
 }
 #formation-1 img,#formation-2 img, #formation-3 img{
     height: 100px;
@@ -142,7 +156,7 @@ footer{
     text-align: center;
 }
 #retour-haut svg{
-    color: rgb(17, 204, 188);
+    color: var(--bouton-backtotop-color);
     height: 50px;
     width: 50px;
     position: fixed;
