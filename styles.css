@@ -11,7 +11,7 @@ html{
     --color-svg-etoiles:rgb(7, 172, 54);
     --color-svg-tools:rgb(140, 138, 138);
     --navbar-background-color: rgba(0, 0, 0, 0.3);
-    --bouton-backtotop-color:beige;
+    --bouton-backtotop-color:rgb(209, 16, 151);
     --backgrounds-color:white;
     --body-color:black;
 }
@@ -74,6 +74,7 @@ body{
     position: fixed;
     width: 100%;
     background: var(--navbar-background-color);
+    z-index: 1;
 }
 .imgfond{
     /* height: 100vh;
@@ -145,6 +146,7 @@ body{
     height: auto;
     border-radius: 20px;
 }
+
 #formation-1 img,#formation-2 img, #formation-3 img{
     height: 100px;
     width: 100px;
@@ -154,6 +156,7 @@ body{
 }
 #portfolio{
     text-align: center;
+    padding-top: 10px;
 }
 #portfolio img{
     height: auto;
@@ -175,9 +178,22 @@ body{
     flex-direction: column;
     align-items: center;
 }
+#Ca-cie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 #contacts img{
     height: 100px;
     width: 100px;
+}
+#contacts a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#num p,#ad-mail p{
+    margin: 0;
 }
 #maps img{
     margin-top: 50px;
@@ -235,8 +251,8 @@ footer{
     height: 50px;
     width: 50px;
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: 10px;
+    bottom: 10px;
 }
 
 /* types de polices h1 h2 p*/
