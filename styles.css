@@ -1,7 +1,7 @@
 html{
     padding: 0;
     margin: 0;
-    --colorfooter:rgb(132, 6, 126);
+    --colorfooter:rgb(255, 255, 255);
     --color-script-footer:white;
     --color-maison:rgb(250, 4, 229);
     --color-linkedin:rgb(114, 114, 245);
@@ -13,9 +13,11 @@ html{
     --navbar-background-color: rgba(0, 0, 0, 0.3);
     --bouton-backtotop-color:beige;
     --backgrounds-color:white;
+    --body-color:black;
 }
 body{
-    background-image: url(./images/snowfall-201496_1920.jpg);
+    /* background-color: var(--body-color); */
+    background-color: rgb(247, 212, 247);
     background-attachment: fixed;
 }
 .row{
@@ -33,6 +35,11 @@ body{
     background-color: rgb(224, 170, 224,0.5);
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+.background-div{
+    margin-top: 20px;
 }
 #profil{
     margin-top: 0;
@@ -40,12 +47,14 @@ body{
     background-color: var(--backgrounds-color);
     margin-left: 20px;
     margin-right: 20px;
+    border-radius: 20px;
 }
 .background-div{
     background-color: var(--backgrounds-color);
     margin-left: 20px;
     margin-right: 20px;
     padding-bottom: 10px;
+    border-radius: 20px;
 }
 #profil h1, #profil p, .titre-profil h2, #adad p, #titre-formation h2{
     text-align: center;
@@ -80,30 +89,35 @@ body{
     background-position: center;
     background-repeat: no-repeat; */
     height: 100%;
+    border-radius: 20px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#logo-linkedin,#logo-print,#desc-linkedin,#desc-print, #photo-profil, #desc-profil, #competences h2, #competences p,.svg-langages, .titre-langages, .svg-tools, .titre-tools, .svg-web-design, .titre-web-design, .svg-office, .titre-office, .svg-travail, .titre-travail, .svg-langues, .titre-langues{
+#logo-linkedin,#desc-linkedin,#desc-print, #photo-profil, #competences h2, #competences p,.svg-langages, .titre-langages, .svg-tools, .titre-tools, .svg-web-design, .titre-web-design, .svg-office, .titre-office, .svg-travail, .titre-travail, .svg-langues, .titre-langues{
     display: flex;
     justify-content: center;
+}
+#desc-profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #svg-web-design img, #svg-travail img, #svg-langues img,#img-forma img,#img img,#svg-office img{
     width: 100%;
     height: auto;
-}
-#desc-profil p{
-    width: 500px;
+    border-radius: 20px;
 }
 #img-langages img{
     height: auto;
     width: 100%;
+    border-radius: 20px;
 }
 .qualites p{
     text-align: center;
 }
-#html,#part-html, #part-css, #part-js, #part-wordpress, #part-bootstrap, #part-whimsical, #part-photoshop, #part-illustrator, #part-word, #part-excel, #part-power, #part-windows, #part-visual, #part-francais, #part-anglais, #part-turc, #formation-1{
+#html,#part-html, #part-css, #part-js, #part-wordpress, #part-bootstrap, #part-whimsical, #part-photoshop, #part-illustrator, #part-word, #part-excel, #part-power, #part-windows, #part-visual, #part-francais, #part-anglais, #part-turc, #formation-1,#xp-desc,#desc-profil{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -111,6 +125,13 @@ body{
 }
 #formation-2, #formation-3{
     flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+#notes-langages,#notes-tools, #notes-Web-Design,#notes-office,#notes-travail,#notes-langues,#formations,#xp-part{
+    padding-top: 10px;
+}
+#img-forma{
     display: flex;
     align-items: center;
 }
@@ -122,6 +143,7 @@ body{
 #svg-tools img{
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 #formation-1 img,#formation-2 img, #formation-3 img{
     height: 100px;
@@ -137,23 +159,16 @@ body{
     height: auto;
     width: 100%;
 }
-
-.grille{
-    display: grid;
-    max-width: 1100px;
-    width: 80%;
+#loisirs-photos img{
+    width: 100%;
     height: auto;
-    margin: 30px auto;
-    grid-template-columns: repeat(auto-fill, 500px);
+    border-radius: 20px;
+}
+#xp-desc{
+    display: flex;
     justify-content: center;
-    grid-gap: 50px;
+    align-items: center;
 }
-.grid-item{
-    width: 500px;
-    height: 500px;
-    background-color: plum;
-}
-
 #tel, #mail, #maps{
     display: flex;
     justify-content: center;
@@ -168,10 +183,15 @@ body{
     margin-top: 50px;
 }
 footer{
-    /* background-color: var(--colorfooter); */
-    background-image: url(./images/triangles-1430105.png);
-    background-attachment: fixed;
+    background-color: var(--colorfooter);
+    /* background-image: url(./images/triangles-1430105.png);
+    background-attachment: fixed; */
     padding-top: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding-top: 50px;
 }
 #footer-content svg,#footer-content p{
     color: var(--color-script-footer);
@@ -179,9 +199,26 @@ footer{
 #logo-linkedin svg{
     color:var(--color-linkedin);
 }
+#logo-linkedin{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#loisirs h2{
+    text-align: center;
+}
+#desc-linkedin{
+    display: flex;
+    justify-content: flex-end;
+}
+#desc-print{
+    display: flex;
+    justify-content: flex-start;
+}
 #logo-print{
     display: flex;
     align-items: flex-end;
+    justify-content: flex-start;
 }
 #logo-print svg{
     color:var(--color-print);
@@ -201,9 +238,17 @@ footer{
     right: 0;
     bottom: 0;
 }
+
 /* types de polices h1 h2 p*/
 
 @media(max-width:768px){
+    #intro{
+        transform: translateY(-400px);
+        background-color: rgb(224, 170, 224,0.5);
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 10px;
+    }
     #telecharger-cv, #github{
         display: flex;
         justify-content: center;
@@ -216,9 +261,14 @@ footer{
         display: flex;
         order: 2;
     }
+    #logo-print svg{
+        color:var(--color-print);
+        margin-left: 0px;
+    }
     #logo-print{
         display: flex;
         order: 3;
+        margin-top: 20px;
     }
     #desc-print{
         display: flex;
