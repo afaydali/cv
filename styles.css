@@ -48,6 +48,7 @@ body{
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
+    box-shadow: 0 0 10px rgb(159, 241, 247);
 }
 .background-div{
     background-color: var(--backgrounds-color);
@@ -55,6 +56,7 @@ body{
     margin-right: 20px;
     padding-bottom: 10px;
     border-radius: 20px;
+    box-shadow: 0 0 10px rgb(159, 241, 247);
 }
 #profil h1, #profil p, .titre-profil h2, #adad p, #titre-formation h2{
     text-align: center;
@@ -79,7 +81,15 @@ body{
 .imgfond{
     /* height: 100vh;
     width: 99vw; */
-    height: 90vh;
+    height: 600px;
+}
+#titre-cactus a{
+    text-decoration:none;
+}
+#lien-github{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 .imgfond .img{
     background-image: url(./images/planner-4233907_1920.jpg);
@@ -91,7 +101,6 @@ body{
     background-repeat: no-repeat; */
     height: 100%;
     border-radius: 20px;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -204,10 +213,11 @@ footer{
     background-attachment: fixed; */
     padding-top: 10px;
     margin-top: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
     border-radius: 20px;
     padding-top: 50px;
+    box-shadow: 0 0 10px rgb(159, 241, 247);
 }
 #footer-content svg,#footer-content p{
     color: var(--color-script-footer);
@@ -254,7 +264,9 @@ footer{
     right: 10px;
     bottom: 10px;
 }
-
+#jeux, #sciences, #mangas, #animaux{
+    margin-top: 10px;
+}
 .techno2 {
     position: relative;
     width: auto;
@@ -286,6 +298,7 @@ footer{
 
 .image__overlay--primary {
     background: rgb(242, 137, 250, 0.5);
+    border-radius: 20px;
 }
 
 .image__overlay > * {
@@ -306,8 +319,11 @@ footer{
 /* types de polices h1 h2 p*/
 
 @media(max-width:768px){
+    .imgfond{
+        height: 700px;
+    }
     #intro{
-        transform: translateY(-400px);
+        transform: translateY(-500px);
         background-color: rgb(224, 170, 224,0.5);
         margin-left: 20px;
         margin-right: 20px;
@@ -344,7 +360,6 @@ footer{
     .imgfond{
         /* height: 100vh;
         width: 99vw; */
-        height: 50vh;
     }
     .imgfond .img{
         background-image: url(./images/planner-4233907_1920.jpg);
