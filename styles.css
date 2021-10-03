@@ -78,7 +78,6 @@ body{
     background: var(--navbar-background-color);
     z-index: 1;
 }
-#titre
 .imgfond{
     /* height: 100vh;
     width: 99vw; */
@@ -360,10 +359,6 @@ footer{
     }
     #maps img{
         margin-top: 0;
-    }
-    .imgfond{
-        /* height: 100vh;
-        width: 99vw; */
     }
     .imgfond .img{
         background-image: url(./images/planner-4233907_1920.jpg);
