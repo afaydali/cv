@@ -78,10 +78,14 @@ body{
     background: var(--navbar-background-color);
     z-index: 1;
 }
+#titre
 .imgfond{
     /* height: 100vh;
     width: 99vw; */
     height: 600px;
+}
+#titre-ca{
+    margin-top: 25px;
 }
 #titre-cactus a{
     text-decoration:none;
